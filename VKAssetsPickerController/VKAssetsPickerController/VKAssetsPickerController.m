@@ -72,7 +72,7 @@ static NSString *identifier = @"VKAssetCellIdentifier";
     if (!_bottomView) {
         _bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, BOTTOM_VIEW_Y, APP_SCREEN_WIDTH, BOTTOM_VIEW_HEIGHT)];
         
-        _bottomView.backgroundColor = UIColorMake(249, 249, 249);
+        _bottomView.backgroundColor = VK_UIColorMake(249, 249, 249);
         CGFloat buttonWidth = 55;
         CGFloat buttonHeight = 24;
         self.doneButton = [[UIButton alloc]initWithFrame:CGRectMake(_bottomView.frame.size.width - buttonWidth - 15, (BOTTOM_VIEW_HEIGHT - buttonHeight) / 2, buttonWidth, buttonHeight)];

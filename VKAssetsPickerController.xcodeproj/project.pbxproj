@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8C5B2991C44A0DC00D3824F /* thumb_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C5B2971C44A0DC00D3824F /* thumb_check@2x.png */; };
-		B8C5B29A1C44A0DC00D3824F /* thumb_uncheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C5B2981C44A0DC00D3824F /* thumb_uncheck@2x.png */; };
+		B8C5B2C11C44D66400D3824F /* VKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C5B2C01C44D66400D3824F /* VKResource.bundle */; };
 		B8D12A261C3E4A5F002AD936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D12A251C3E4A5F002AD936 /* main.m */; };
 		B8D12A291C3E4A5F002AD936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D12A281C3E4A5F002AD936 /* AppDelegate.m */; };
 		B8D12A2C1C3E4A5F002AD936 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D12A2B1C3E4A5F002AD936 /* ViewController.m */; };
@@ -22,8 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B8C5B2971C44A0DC00D3824F /* thumb_check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumb_check@2x.png"; sourceTree = "<group>"; };
-		B8C5B2981C44A0DC00D3824F /* thumb_uncheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumb_uncheck@2x.png"; sourceTree = "<group>"; };
+		B8C5B2C01C44D66400D3824F /* VKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VKResource.bundle; sourceTree = "<group>"; };
 		B8D12A211C3E4A5F002AD936 /* VKAssetsPickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKAssetsPickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D12A251C3E4A5F002AD936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8D12A271C3E4A5F002AD936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,8 +97,6 @@
 		B8D12A3B1C3E4B63002AD936 /* VKAssetsPickerController */ = {
 			isa = PBXGroup;
 			children = (
-				B8C5B2971C44A0DC00D3824F /* thumb_check@2x.png */,
-				B8C5B2981C44A0DC00D3824F /* thumb_uncheck@2x.png */,
 				B8D12A421C3E5AC1002AD936 /* VKHeader.h */,
 				B8D12A3F1C3E5117002AD936 /* VKAssetsPickerController.h */,
 				B8D12A401C3E5117002AD936 /* VKAssetsPickerController.m */,
@@ -109,6 +105,7 @@
 				B8D12A481C3E5E3E002AD936 /* VKAssetCell.xib */,
 				B8D12A4F1C3E6B9A002AD936 /* VKPhotoPreview.h */,
 				B8D12A501C3E6B9A002AD936 /* VKPhotoPreview.m */,
+				B8C5B2C01C44D66400D3824F /* VKResource.bundle */,
 			);
 			path = VKAssetsPickerController;
 			sourceTree = "<group>";
@@ -170,11 +167,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C5B2C11C44D66400D3824F /* VKResource.bundle in Resources */,
 				B8D12A341C3E4A5F002AD936 /* LaunchScreen.storyboard in Resources */,
 				B8D12A4A1C3E5E3E002AD936 /* VKAssetCell.xib in Resources */,
-				B8C5B2991C44A0DC00D3824F /* thumb_check@2x.png in Resources */,
 				B8D12A311C3E4A5F002AD936 /* Assets.xcassets in Resources */,
-				B8C5B29A1C44A0DC00D3824F /* thumb_uncheck@2x.png in Resources */,
 				B8D12A2F1C3E4A5F002AD936 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

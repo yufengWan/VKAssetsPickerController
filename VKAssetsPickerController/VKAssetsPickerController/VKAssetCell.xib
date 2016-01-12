@@ -22,8 +22,8 @@
                             <constraint firstAttribute="height" constant="25" id="Kpm-cX-Reh"/>
                             <constraint firstAttribute="width" constant="25" id="QlD-m5-gbn"/>
                         </constraints>
-                        <state key="normal" backgroundImage="thumb_uncheck.png"/>
-                        <state key="selected" backgroundImage="thumb_check.png"/>
+                        <state key="normal" backgroundImage="VKResource.bundle/thumb_uncheck.png"/>
+                        <state key="selected" backgroundImage="VKResource.bundle/thumb_check.png"/>
                         <connections>
                             <action selector="checkClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="B6j-ja-GfB"/>
                         </connections>
@@ -48,7 +48,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="thumb_check.png" width="22" height="22"/>
-        <image name="thumb_uncheck.png" width="22" height="22"/>
+        <image name="VKResource.bundle/thumb_check.png" width="15" height="15"/>
+        <image name="VKResource.bundle/thumb_uncheck.png" width="15" height="15"/>
     </resources>
 </document>
