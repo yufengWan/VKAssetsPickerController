@@ -11,7 +11,17 @@ An Image Picker For iOS.
 
 * 支持图片选择时的预览大图功能。
 
-可以参见示例图片：
+快速集成:
+
+* 使用Pod安装：pod search VKAssetsPickerController 请安装最新版本:D。
+
+* 手动集成，拖动VKAssetsPickerController到项目中即可。
+
+如何使用:
+
+* 参考示例项目中的代码即可。
+
+具体示例图片：
 
 ![image01](https://raw.githubusercontent.com/MrVokie/VKAssetsPickerController/master/Introduce/image01.png)
 ![image01](https://raw.githubusercontent.com/MrVokie/VKAssetsPickerController/master/Introduce/image02.png)
