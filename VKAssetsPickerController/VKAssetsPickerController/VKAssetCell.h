@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
 @property (weak, nonatomic) IBOutlet UIButton *selectButton;
 @property (nonatomic, assign) id<VKCellDelegate> vkDelegate;
+@property (weak, nonatomic) IBOutlet UIView *shadeCover;
 
 @end

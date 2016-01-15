@@ -13,17 +13,21 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nhZ-Cg-vC6">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nhZ-Cg-vC6">
                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxK-sa-xE9" userLabel="shade">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30272052304964536" colorSpace="calibratedRGB"/>
+                    </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trr-MJ-yvT">
                         <rect key="frame" x="92" y="5" width="25" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="Kpm-cX-Reh"/>
                             <constraint firstAttribute="width" constant="25" id="QlD-m5-gbn"/>
                         </constraints>
-                        <state key="normal" backgroundImage="VKResource.bundle/thumb_uncheck.png"/>
-                        <state key="selected" backgroundImage="VKResource.bundle/thumb_check.png"/>
+                        <state key="normal" backgroundImage="VKResource.bundle/unselect.png"/>
+                        <state key="selected" backgroundImage="VKResource.bundle/select.png"/>
                         <connections>
                             <action selector="checkClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="B6j-ja-GfB"/>
                         </connections>
@@ -36,19 +40,24 @@
                 <constraint firstAttribute="trailing" secondItem="nhZ-Cg-vC6" secondAttribute="trailing" id="8FN-ky-yVB"/>
                 <constraint firstAttribute="bottom" secondItem="nhZ-Cg-vC6" secondAttribute="bottom" id="CFc-wf-vul"/>
                 <constraint firstAttribute="trailing" secondItem="Trr-MJ-yvT" secondAttribute="trailing" constant="8" id="TzS-Nu-cLn"/>
+                <constraint firstItem="XxK-sa-xE9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="W1H-UD-Kah"/>
                 <constraint firstItem="nhZ-Cg-vC6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y58-my-jWz"/>
+                <constraint firstAttribute="trailing" secondItem="XxK-sa-xE9" secondAttribute="trailing" id="off-xE-5qP"/>
+                <constraint firstItem="XxK-sa-xE9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="s6B-0q-axa"/>
                 <constraint firstItem="nhZ-Cg-vC6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="teN-MI-YpK"/>
+                <constraint firstAttribute="bottom" secondItem="XxK-sa-xE9" secondAttribute="bottom" id="uaV-GO-IDb"/>
             </constraints>
             <size key="customSize" width="125" height="125"/>
             <connections>
                 <outlet property="selectButton" destination="Trr-MJ-yvT" id="3YW-8g-5rR"/>
+                <outlet property="shadeCover" destination="XxK-sa-xE9" id="Max-PK-6bO"/>
                 <outlet property="thumbnail" destination="nhZ-Cg-vC6" id="duY-4C-OC4"/>
             </connections>
-            <point key="canvasLocation" x="-134.5" y="412.5"/>
+            <point key="canvasLocation" x="265.5" y="337.5"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="VKResource.bundle/thumb_check.png" width="15" height="15"/>
-        <image name="VKResource.bundle/thumb_uncheck.png" width="15" height="15"/>
+        <image name="VKResource.bundle/select.png" width="15" height="15"/>
+        <image name="VKResource.bundle/unselect.png" width="15" height="15"/>
     </resources>
 </document>

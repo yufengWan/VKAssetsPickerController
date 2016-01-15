@@ -153,6 +153,8 @@ static NSString *identifier = @"VKAssetCellIdentifier";
                               resultHandler:^(UIImage *result, NSDictionary *info) {
                                   cell.thumbnail.image = result;
                                   cell.selectButton.selected = [self.itemArray[indexPath.item][@"selected"] integerValue];
+                                    cell.shadeCover.hidden = !cell.selectButton.selected;
+                                  
                               }];
     return cell;
 }
@@ -191,6 +193,7 @@ static NSString *identifier = @"VKAssetCellIdentifier";
         if (cell.selectButton.isSelected) {
             self.itemArray[indexPath.item][@"selected"] = @0;
             cell.selectButton.selected = NO;
+            cell.shadeCover.hidden = YES;
             self.selectedImageNums--;
             [self updateDoneButtonTitle];
         }else{
@@ -201,6 +204,7 @@ static NSString *identifier = @"VKAssetCellIdentifier";
             }else{
                 self.itemArray[indexPath.item][@"selected"] = @1;
                 cell.selectButton.selected = YES;
+                cell.shadeCover.hidden = NO;
                 self.selectedImageNums++;
                 [self updateDoneButtonTitle];
             }
